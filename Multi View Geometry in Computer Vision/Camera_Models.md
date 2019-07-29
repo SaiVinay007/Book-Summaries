@@ -29,4 +29,20 @@
   * camera as center and principal axis along z-axis, coordinate system is called camera coordinate frame.
 
 **Camera rotation and translation** :
+
+* In general camera coordinate is not taken as reference but take world coordinate frame as reference.
+* To get the coordinates of a point in camera coordinate frame we use X_cam = R(X - C), where X_cam is point coordinates wrt cam, X is the original coordinates of point, R is the rotation matrix (representing orientaion of camera coordinate frame) and C is coordinates of camera.
+* 9 DOF
+
+**CCD camera**:
+
+* In the case of CCD cameras, there is the additional possibility of having non-square pixels
+* 10 DOF
+
+**Finite projective camera**:
+
+* For generality a skew term is added in calibration matrix
+* 11 DOF
+* The set of camera matrices of finite projective cameras is identical with the set of
+  homogeneous 3 × 4 matrices for which the left hand 3 × 3 submatrix is non-singular.
 * 
